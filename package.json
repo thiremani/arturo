@@ -4,17 +4,18 @@
   "description": "website for arturo technologies",
   "main": "index.js",
   "scripts": {
-    "test": "test",
+    "deploy": "gcloud app deploy",
+    "start": "node index.js",
     "build-css": "stylus source/stylesheets/index.styl -o static/css",
     "watch-css": "stylus source/stylesheets/index.styl -o static/css -w",
     "clean": "rm -rf static/css && mkdir -p static/css",
     "build": "npm run clean && npm run build-css",
     "watch": "npm run clean && npm run watch-css & nodemon server -e js,pug",
-    "start": "node server"
+    "test": "test"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/thiremani/arturo.git"
+    "url": "https://github.com/thiremani/arturo.git"
   },
   "author": "tejas hiremani",
   "license": "UNLICENSED",
@@ -28,5 +29,8 @@
     "nodemon": "^1.14.3",
     "pug": "^2.0.0-rc.4",
     "stylus": "^0.54.5"
+  },
+    "devDependencies": {
+    "@google-cloud/nodejs-repo-tools": "1.4.17"
   }
 }
