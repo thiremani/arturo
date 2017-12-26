@@ -1,0 +1,19 @@
+{
+  "name": "arturo",
+  "version": "1.0.0",
+  "description": "website for arturo technologies",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thiremani/arturo.git"
+  },
+  "author": "tejas hiremani",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/thiremani/arturo/issues"
+  },
+  "homepage": "https://github.com/thiremani/arturo#readme"
+}
