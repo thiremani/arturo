@@ -13,10 +13,18 @@ img
   display block
   padding 1%
   margin auto
-  width 12%
+  @media(min-device-width: 320px)
+    width 20%
+  @media(min-device-width: 641px)
+    width 12%
 
 h2
   text-align center
+  padding-top 1.5%
+  @media(min-device-width 320px)
+    font-size 50px
+  @media(min-device-width 641px)
+    font-size 30px
 
 .page-title
   font-weight 200
@@ -44,10 +52,11 @@ h2
       text-decoration underline
 
 .main-content
-  padding 1px
-  @media(min-width: 481px)
-    margin 20px auto
+  @media(min-device-width: 320px)
+    padding 2%
+  @media(min-device-width: 641px)
     max-width 600px
+    margin 10px auto
 
   p
     line-height 1.6
